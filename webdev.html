@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Web Development</title>
+</head>
+<body>
+  <ul class="skip-links">
+    <li><a href="#nav">Skip to main nav</a></li>
+    <li><a href="#main">Skip to main content</a></li>
+  </ul>
+    <nav id="nav" class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+          <a class="text-white navbar-brand" href="index.html" aria-label="link to home page">              
+            <img 
+            class="logo img-fluid"
+            src="images/logo_1091x821.png" 
+            alt="designed logo for my portfolio"></a>
+          <button class="navbar-toggler text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="animate__animated animate__bounce nav-link active text-danger" aria-current="page" href="#">Web Development Portfolio</a>
+              </li> <!--aria current allows the accessibility user tp know the page theyre on-->
+              <li class="nav-item">
+                <a class="nav-link text-white" href="photography.html">Photo & Video Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="design.html">Design Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSdpJoLG5Jd72EC3zrRH7qX832X0xO9iw9wAME1IFrRc4tsDQA/viewform" target="_blank">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="wrapper" id="main" role="main"> <!--aria role main and id main allow accessibility access to main content-->
+        <h1 class="text-center text-danger">
+          Interactive Media Design Showcase
+        </h1>
+        <p class="text-center text-warning">
+          Our client, Parthivi Rastogi, is a professor at Algonquin College. She is looking to rebrand her website and showcase her graduates in a new way.
+
+          We built an entirely new website by hand using HTML, CSS, JavaScript, Bootstrap, and also implemented an API script for data collection of students via a Google Form. 
+        </p>
+        <a class="btn text-white btn-outline-danger" role="button" target="_blank" href="https://mino0027.github.io/imdshowcase/" aria-label="external link to new website page">Built from scratch Live Website</a>
+
+        <a class="btn text-white btn-outline-danger" role="button" target="_blank" href="https://s2024.acimd.ca/" aria-label="external link to old website page">Old Website to Rebrand</a>
+        <br>
+        <br>
+        <h2 role="heading" class="text-white animate__animated animate__fadeInDownBig text-center">
+          This entire site obivously!
+        </h2>
+        <p class="text-danger">
+          On top my HTML and CSS experience I have work in Shopify, Wordpress, and Drupal! 
+        </p>
+        <div class="padding-git animate__animated animate__flipInX">
+          <img 
+              class="git img-fluid"
+              srcset="
+              images/git_1232x683.png 512w,
+              images/git.png 992w"
+              sizes="
+              (min-width:992px) 992px, 100vw"
+              src="git.png" 
+              alt="github for chris minosora web development portfolio">
+        </div>
+        <a class="btn text-danger btn-outline-danger" role="button" target="_blank" href="https://github.com/mino0027" aria-label="external link to github page">Github Link</a>
+        <div class="padding-git animate__animated animate__flipInY">
+          <img 
+              class="git pen img-fluid"
+              srcset="
+              images/pen_1232x683.png 512w,
+              images/pen.png 992w"
+              sizes="
+              (min-width:992px) 992px, 100vw"
+              src="pen.png" 
+              alt="codepen for chris minosora web development portfolio">
+        </div>
+        <a class="btn text-danger btn-outline-danger" role="button" target="_blank" href="https://codepen.io/mino0027/pens/public" aria-label="external link to codepen page">Codepen Link</a>
+        <div role="complementary" class="padding-git">
+          <h2 class="text-white cover">
+            Coming 2025 - Python
+          </h2>
+          <img 
+              class="git pen js img-fluid"
+              srcset="
+              images/p_1000x500.jpeg 512w,
+              images/p_1200x600.jpeg 992w"
+              sizes="
+              (min-width:992px) 992px, 100vw"
+              src="js_1200x600.jpeg" 
+              alt="python placeholder for chris minosora web development portfolio">
+        </div>
+      </div>
+      <footer role="contentinfo"> <!--this area is a smaller nav to allow user to get somewhere from the bottom of a page-->
+        <nav class="navbar navbar-expand">
+          <div class="container-fluid">
+            <a class="text-white navbar-brand" href="index.html" aria-label="link to home page">
+              <img 
+              class="logo img-fluid"
+              src="images/logo_1091x821.png" 
+              alt="designed logo for my portfolio">
+            </a>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="index.html" aria-label="link to home page">Home</a>
+                </li>
+                <li class="nav-item active"> <!--aria current allows the accessibility user tp know the page theyre on-->
+                  <a class="nav-link text-danger" aria-current="page"  href="#">Web Development Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="photography.html" aria-label="link to photo and video page">Photo & Video Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="design.html" aria-label="link to design page">Design Portfolio</a>
+                </li> <!--aria labels (used throughout every link on page) allows accessibility user to know what the link does-->
+              </ul>
+            </div>
+            <div class="copyright text-danger">
+              <p>
+                &copy; Copyright minosora 2024
+              </p>
+            </div>
+          </div>
+        </nav>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
